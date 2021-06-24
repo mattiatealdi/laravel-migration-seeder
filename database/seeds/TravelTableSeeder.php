@@ -16,7 +16,7 @@ class TravelTableSeeder extends Seeder
             $new_travel = new Travel();
             $new_travel->locations = 'Francia';
             $new_travel->type = 'Vacanza di Mare';
-            $new_travel->date = '2018-06-12';
+            $new_travel->startdate = '2018/06/12';
             $new_travel->duration = 21;
             $new_travel->hotels = 'Hilton, Da Gino';
             $new_travel->price = 10000;
