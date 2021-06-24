@@ -15,12 +15,13 @@ class CreateTravelTable extends Migration
     {
         Schema::create('travel', function (Blueprint $table) {
             $table->id();
-            $table->locations();
-            $table->type();
-            $table->startDate();
-            $table->duration();
-            $table->hotels();
-            $table->price();
+            $table->text('locations');
+            $table->string('type', 30);
+            $table->date('startDate');
+            $table->integer('duration')->unsigned;
+            $table->text('hotels');
+            $table->mediumInteger('price')->unsigned;
+            $table->text('description');
             $table->timestamps();
         });
     }
